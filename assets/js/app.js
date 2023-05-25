@@ -47,8 +47,8 @@ AOS.init();
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
+  const contact = event.target;
+  const formData = new FormData(contact);
   
   fetch("/", {
     method: "POST",
