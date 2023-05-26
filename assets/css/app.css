@@ -406,6 +406,7 @@ section {
 
 form {
     width: 100%;
+    margin-top: 50%;
 }
 
 .contact-widget {
@@ -414,7 +415,6 @@ form {
 
 .form-group {
     margin-bottom: 24px;
-    margin-top: 50px;
 }
 
 .form-group .form-input {
