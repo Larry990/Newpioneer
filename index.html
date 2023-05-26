@@ -161,46 +161,41 @@
     <!-- //Blog -->
 
     <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="grid">
-                <div class="contact-info" data-aos="fade-up">
-                    <div class="section-intro">
-                        <h1 class="heading-2">Contact info</h1>
-                    </div>
-                    <div class="contact-widget">
-                        <h3 class="heading-3">Email</h3>
-                        <ul>
-                            <li>hrdepartmentpioneer@gmail.com</li>
-            
-                        </ul>
-                    </div>
-                    <div class="contact-widget">
-                        <h3 class="heading-3">Phone</h3>
-                        <ul>
-                            <li>+971 - 65270082</li>
-                            <li>+971 - 507232615 </li>
-                        </ul>
-                    </div>
-                </div>
-        <div class="section-intro">
-                        <h1 class="heading-2">Drop us a Message</h1>
-                    </div>
-                  <form action="https://formspree.io/f/xwkjjnjv" method="POST" enctype="multipart/form-data">
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your file:
-    <input type="file" name="upload">
-  </label>
-  <button type="submit">Send</button>
-</form>
-                </div>
-            </div>
-        </div>
-    </section>   
+   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xwkjjnjv",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+ 
     <!-- //Contact -->
 
     <!-- Footer -->
